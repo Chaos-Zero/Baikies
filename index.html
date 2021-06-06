@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<!--Basic Page Needs-->
+	<title>Baikies Chip Shop - Homepage</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Menu and location of Baikies Chip Shop in Orkney">
+	<meta name="author" content="Calum Beck">
+	<meta name="keywords" content="Baikie Baikies Chips Chippie Chippy Chipshop Fish & Supper Dinner Takeaway carryout">
+	<!--Mobile Specific Metas-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="images/icons/Baikies_name.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="vendor/revolution/css/navigation.css">
+	<link rel="stylesheet" type="text/css" href="vendor/revolution/css/settings.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker-bootstrap/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/dist/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--==================================Smooth Scrolling=============================================================-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	jQuery($ => {
+	  // The speed of the scroll in milliseconds
+	  const speed = 1000;
+  
+	  $('a[href*="#"]')
+		.filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`))
+		.unbind('click.smoothScroll')
+		.bind('click.smoothScroll', event => {
+		  const targetId = event.currentTarget.getAttribute('href').split('#')[1];
+		  const targetElement = document.getElementById(targetId);
+  
+		  if (targetElement) {
+			event.preventDefault();
+			$('html, body').animate({ scrollTop: $(targetElement).offset().top }, speed);
+		  }
+		});
+	});
+  </script>
+<!--===============================================================================================-->
+
+</head>
+<body class="animsition">
+<!--================================Facebook=======================================================-->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="MPYtUnqK"></script>
+<!--===============================================================================================-->
+
+	<div class="bg-home-boxed"></div>
+
+		<!--Content page-->
+		<div class="wrap-home-boxed ">
+
+
+			<header>
+				<!-- Header desktop -->
+				<div id="wrap_header_boxed" >
+					<!-- Logo -->
+					<div class="home-boxed-logo">
+						<a href="index.html"><img src="images/icons/Baikies_name.png" alt="logo"></a>
+					</div>
+
+					<!-- Menu -->
+					<div class="main_nav">
+						<nav class="menu col_header">
+							<ul class="main_menu">
+								<li><a href="./">Menu</a></li>
+								<li><a href="#preorder">Preorder</a></li>
+								<li><a href="#location">Location</a></li>
+								<!-- <li><a href="about-us.html">About us</a></li> -->
+								<li><a href="https://www.facebook.com/Baikies-Chip-Shop-Takeaway-111906970356591"  target="_blank">Facebook</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				<!-- Header Mobile -->
+				<div id="wrap_header_mobile">
+					<!--Logo moblie___________________________________________________________________-->		
+					<div class="logo-mobile">
+						<a href="index.html"><img alt="logo-deli" src="images/icons/Baikies.png"></a>
+					</div>
+					<!--Button show menu___________________________________________________________________-->
+					<div class="btn-show-menu">
+						<button class="btn-show-menu-mobile hamburger hamburger--squeeze" type="button">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
+					</div>	
+				</div>
+
+				<!-- Menu Mobile -->
+				<div class="wrap-side-menu" >
+					<nav class="side-menu">
+						<ul class="main-menu">
+							<li><a href="index3.html">Menu</a></li>
+								<li><a href="#preorder">Preorder</a></li>
+								<li><a href="#location">Location</a></li>
+								<li><a href="about-us.html">About us</a></li>
+								<li><a href="https://www.facebook.com/Baikies-Chip-Shop-Takeaway-111906970356591"  target="_blank">Facebook</a>
+								</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+	<!-- Our Menu -->
+	<section class="our-menu" >
+		<div class="container">
+			<!-- title our menu -->
+			<div class="wrap-title-our-menu row">
+				<div class="col-12 title-our-menu">
+					<h2>Menu</h2>
+				</div>
+			</div>
+
+			<!-- food menu -->
+			<div class="row wrap-food-menu">
+				<div id="food-menu">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#single" role="tab" aria-controls="single" aria-expanded="true">Single</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="tab-supper" data-toggle="tab" href="#supper" role="tab" aria-controls="supper">Supper</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="tab-double" data-toggle="tab" href="#double" role="tab" aria-controls="double">Double-Supper</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="tab-sides" data-toggle="tab" href="#sides" role="tab" aria-controls="sides">Sides</a>
+						</li>
+					</ul>
+					<li class="centered">
+						<a class="nav-link" id="deals-tab"  data-toggle="modal" data-target="#exampleModal" href="#deals" role="tab" aria-controls="single" aria-expanded="true">News & Deals</a>
+					</li>
+				</div>
+			</div>
+
+			
+			<!-- FB Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">News & Deals</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="fb-modal-body">
+						<div class="fb-page" data-href="https://www.facebook.com/Baikies-Chip-Shop-Takeaway-111906970356591" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Baikies-Chip-Shop-Takeaway-111906970356591" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Baikies-Chip-Shop-Takeaway-111906970356591">Baikies Chip Shop Takeaway</a></blockquote></div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<!-- list food -->
+			<div class="tab-content" id="myTabContent">
+				<!-- single -->			
+				<div class="tab-pane fade show active" id="single" role="tabpanel" aria-labelledby="home-tab">
+					<div class="wrap-list-food">
+						<div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row wow fadeInDown" data-wow-delay="0.2s">
+									<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.2s">
+										  <a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/patties.png" >
+										</a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a href="#" onclick="return false;" class="hover-link-color">Pattie</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													An Orkney delicacy! Mince, tattie and onion mixed together, battered and deep-fried.  
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;1.10</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row wow fadeInDown" data-wow-delay="0.2s">
+									<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.2s">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/Food/polony.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Polony</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													A soft-textured smoked sausage, battered and deep-fried. 
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;1.10</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row wow fadeInDown" data-wow-delay="0.4s">
+									<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.4s">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/haggis.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Haggis</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													A Scottish classic! A crumbly sausage, with a warming peppery flavour, battered and deep fried.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;1.10</div>
+								</div>	
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row wow fadeInDown" data-wow-delay="0.4s">
+									<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.4s">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Oatmeal, Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/white_pudding.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">White Pudding</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													Black pudding without the blood. Battered and deep fried. 
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;1.10</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row wow fadeInDown" data-wow-delay="0.6s">
+									<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.6s">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Oatmeal, Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/black_pudding.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Black Pudding</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													Classic black pudding, in a sausage shape, battered and deep fried.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;1.10</div>
+								</div>	
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row wow fadeInDown" data-wow-delay="0.6s">
+									<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.6s">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Sulfur Dioxide, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/sausage.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Sausage (Beef)</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													A chippy staple. Two beef sausages battered, and deep fried.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;1.10</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row wow fadeInDown" data-wow-delay="0.8s">
+									<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.8s">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/smoked_sausage.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Smoked Sausage</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													A large smoked sausage deep fried without batter.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;1.90</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row wow fadeInDown" data-wow-delay="0.8s">
+									<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.8s">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya, Sulphite<br>May contain Mustard">
+											<img alt="food" src="images/food/super_porky.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Super Porkie</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													I don't know what the hell a Super Porky is.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;1.60</div>
+								</div>
+							</div>
+						</div>
+                
+                <div class="row list-food">
+                    <div class="col-md-10 col-lg-6">
+                        <!-- item food -->
+                        <div class="item-food row wow fadeInDown" data-wow-delay="0.8s">
+                            <div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.8s">
+                                <a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/Food/rib.png"></a>
+                            </div>
+                            <div class="col-12 col-sm-8 text-list-food ">
+                                    <div class="name-price row">
+                                        <div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Range Rib</a></div>
+                                        <div class="line-food col">
+                                            <div class="add-line-run"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row"> 
+                                        <div class="col-12 col-sm-12 info-food">
+                                            A description is needed.
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="price-food col-12 col-sm-2">&#163;2.50</div>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-lg-6">
+                        <!-- item food -->
+                        <div class="item-food row wow fadeInDown" data-wow-delay="0.8s">
+                            <div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.8s">
+                                <a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/Food/steak.png"></a>
+                            </div>
+                            <div class="col-12 col-sm-8 text-list-food ">
+                                    <div class="name-price row">
+                                        <div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Chop Steak</a></div>
+                                        <div class="line-food col">
+                                            <div class="add-line-run"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row"> 
+                                        <div class="col-12 col-sm-12 info-food">
+                                            A description is needed.
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="price-food col-12 col-sm-2">&#163;2.50</div>
+                        </div>
+                    </div>
+                </div>
+
+        <div class="row list-food">
+            <div class="col-md-10 col-lg-6">
+                <!-- item food -->
+                <div class="item-food row wow fadeInDown" data-wow-delay="0.8s">
+                    <div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.8s">
+                        <a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/chicken_bites.png"></a>
+                    </div>
+                    <div class="col-12 col-sm-8 text-list-food ">
+                            <div class="name-price row">
+                                <div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Chicken Bites</a></div>
+                                <div class="line-food col">
+                                    <div class="add-line-run"></div>
+                                </div>
+                            </div>
+                            <div class="row"> 
+                                <div class="col-12 col-sm-12 info-food">
+                                    X amount of tender chicken breast bites, battered and deep fried.
+                                </div>
+                            </div>
+                    </div>
+                    <div class="price-food col-12 col-sm-2">&#163;3.80</div>
+                </div>
+            </div>
+            <div class="col-md-10 col-lg-6">
+                <!-- item food -->
+                <div class="item-food row wow fadeInDown" data-wow-delay="0.8s">
+                    <div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.8s">
+                        <a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/fish.png"></a>
+                    </div>
+                    <div class="col-12 col-sm-8 text-list-food ">
+                            <div class="name-price row">
+                                <div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Fish</a></div>
+                                <div class="line-food col">
+                                    <div class="add-line-run"></div>
+                                </div>
+                            </div>
+                            <div class="row"> 
+                                <div class="col-12 col-sm-12 info-food">
+                                    Full fillet of locally sourced cod, battered and deep fried.
+                                </div>
+                            </div>
+                    </div>
+                    <div class="price-food col-12 col-sm-2">&#163;4.80</div>
+                </div>
+            </div>
+        </div>
+
+<div class="row list-food">
+    <div class="col-md-10 col-lg-6">
+        <!-- item food -->
+        <div class="item-food row wow fadeInDown" data-wow-delay="0.8s">
+            <div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.8s">
+                <a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/scampi.png"></a>
+            </div>
+            <div class="col-12 col-sm-8 text-list-food ">
+                    <div class="name-price row">
+                        <div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Scampi (Wholetail)</a></div>
+                        <div class="line-food col">
+                            <div class="add-line-run"></div>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-12 col-sm-12 info-food">
+                            Fresh full langoustines, battered and deep fried.
+                        </div>
+                    </div>
+            </div>
+            <div class="price-food col-12 col-sm-2">&#163;3.80</div>
+        </div>
+    </div>
+    <div class="col-md-10 col-lg-6">
+    </div>
+</div>
+</div>
+</div>
+				<!-- supper -->
+				<div class="tab-pane fade" id="supper" role="tabpanel" aria-labelledby="tab-supper">
+					<div class="wrap-list-food">
+						<div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/patties.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Pattie</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+                                                    Mince, tattie and onion mixed
+                                                    together, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;2.80</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/polony.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Polony</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+                                                    A soft-textured smoked sausage, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;2.80</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/haggis.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Haggis</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+                                                    Large haggis sausage, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;2.80</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Oatmeal, Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/white_pudding.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">White Pudding</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+                                                    Large white pudding sausage, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;2.80</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Oatmeal, Wheat, Soya<br>May contain Mustard">
+											<img alt="food" src="images/food/black_pudding.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Black Pudding</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+                                                    Large black pudding sausage, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;2.80</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Sulfur Dioxide, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/sausage.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Sausage (Beef)</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+                                                    Two battered beef sausages, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;2.80</div>
+								</div>
+							</div>
+						</div>
+                       
+                        <div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/smoked_sausage.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Smoked Sausage</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+                                                    Large smoked sausage, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;3.60</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya, Sulphite<br>May contain Mustard">
+											<img alt="food" src="images/food/super_porky.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Super Porkie</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+                                                    I don't know what the hell a Super Porky is. Comes with chips though.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;3.30</div>
+								</div>
+							</div>
+                        </div>
+                        
+                        <div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/rib.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Range Rib</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+                                                    Range rib, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;4.20</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/steak.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Chop Steak</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+                                                    Chop steak, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;4.20</div>
+								</div>
+							</div>
+                        </div>
+                        
+                        <div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/chicken_bites.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Chicken Bites</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+                                                    X amount of chicken bites, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;5.50</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/fish.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Fish</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+                                                    Full fillet of battered cod, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;6.50</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/scampi.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Scampi (Wholetail)</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+                                                    Wholetail scampi, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;5.50</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+							</div>
+						</div>
+
+					</div>
+				</div>
+				
+				<!-- double supper -->
+				<div class="tab-pane fade" id="double" role="tabpanel" aria-labelledby="tab-double">
+					<div class="wrap-list-food">
+						<div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/patties.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Pattie</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													Double portion of Patties, served with chips. 
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;3.90</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/polony.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Polony</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													Two battered polony sausages, served with chips. 
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;3.90</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/haggis.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Haggis</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													Two large haggis sausages, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;3.90</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Oatmeal, Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/white_pudding.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">White Pudding</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													Two large white pudding sausages, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;3.90</div>
+								</div>
+							</div>
+                        </div>
+                        
+                        <div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Oatmeal, Wheat, Soya<br>May contain Mustard">
+											<img alt="food" src="images/food/black_pudding.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Black Pudding</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													Two large black pudding sausages, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;3.90</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Sulfur Dioxide, Soya<br>May contain Mustard">
+											<img alt="food" src="images/food/sausage.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Sausage (Beef)</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													Four battered beef sauasges, served with chips.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;3.90</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/smoked_sausage.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Smoked Sausage</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													Two large smoked sausages, served with chips.  
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;5.50</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya, Sulphite<br>May contain Mustard">
+											<img alt="food" src="images/food/super_porky.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">HYPER Porkie</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													MAXIMUM PORKIE, served with chips. 
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;4.90</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				
+				<!-- Sides -->
+				<div class="tab-pane fade" id="sides" role="tabpanel" aria-labelledby="tab-sides">
+					<div class="wrap-list-food">
+						<div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/onion_rings.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Onion Rings</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													A side potion of 10 whole slice onion rings (not diced).
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;2.40</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/curry.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Curry Sauce</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													A tub of chip shop curry sauce.
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;1.00</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row list-food">
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/gravy.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Gravy</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													A tub of chip shop gravy.  
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;1.00</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<!-- item food -->
+								<div class="item-food row">
+									<div class="col-12 col-sm-2 img-list-food">
+										<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="Wheat, Soya <br>May contain Mustard">
+											<img alt="food" src="images/food/chips_cheese.png"></a>
+									</div>
+									<div class="col-12 col-sm-8 text-list-food ">
+											<div class="name-price row">
+												<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Chips & Cheese</a></div>
+												<div class="line-food col">
+													<div class="add-line-run"></div>
+												</div>
+											</div>
+											<div class="row"> 
+												<div class="col-12 col-sm-12 info-food">
+													Large portion of chips with melted cheese. 
+												</div>
+											</div>
+									</div>
+									<div class="price-food col-12 col-sm-2">&#163;2.50</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+				<div class="wrap-list-chips">
+					<div class="row list-food">
+						<div class="col-md-10 col-lg-6">
+							<!-- item food -->
+							<div class="item-food row">
+								<div class="col-12 col-sm-2 img-list-food">
+									<a href="#" onclick="return false;" title="Allergens" data-trigger="focus" data-toggle="popover" data-html="true" data-content="POTATOES, INNIT">
+										<img alt="food" src="images/food/chips.png"></a>
+								</div>
+								<div class="col-12 col-sm-8 text-list-food ">
+										<div class="name-price row">
+											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html"><h3>Chip Portions</h3></a></div>
+										</div>
+								
+								</div>
+							</div>
+							<div class="item-food row">
+
+								<div class="col-12 col-sm-8 text-list-food ">
+										<div class="name-price row">
+											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Small</a></div>
+											<div class="line-food col">
+												<div class="add-line-run"></div>
+											</div>
+										</div>
+									
+								</div>
+								<div class="price-food col-12 col-sm-2">&#163;1.20</div>
+							</div>
+							<div class="item-food row">
+
+								<div class="col-12 col-sm-8 text-list-food ">
+										<div class="name-price row">
+											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Regular</a></div>
+											<div class="line-food col">
+												<div class="add-line-run"></div>
+											</div>
+										</div>
+										
+								</div>
+								<div class="price-food col-12 col-sm-2">&#163;1.70</div>
+							</div>
+							<div class="item-food row">
+
+								<div class="col-12 col-sm-8 text-list-food ">
+										<div class="name-price row">
+											<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.html">Large</a></div>
+											<div class="line-food col">
+												<div class="add-line-run"></div>
+											</div>
+										</div>
+										
+								</div>
+								<div class="price-food col-12 col-sm-2">&#163;2.10</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+<!-- Banner -->
+<div id="preorder" class="parallax-banner" >
+	<div class="content-banner">
+		<div class="text-banner wow zoomIn">
+			<h3>Prebook Your Meal</h3>
+		</div>
+		<h5>
+			Call us between 10:30 am and 3pm on Fridays, and Saturdays to order your food; ready on arrival.				
+		</h5>
+		<div class="symbol-banner wow zoomIn" data-wow-delay="0.5s">
+			<img alt="symbol" src="images/icons/symbol-banner-tele.png">
+			<div class="line-symbol-banner wow fadeInLeftBig" id="short-line-left" data-wow-delay="0.5s"></div>
+			<div class="line-symbol-banner wow fadeInLeftBig" id="long-line-left" data-wow-delay="0.5s"></div>
+			<div class="line-symbol-banner wow fadeInRightBig" id="short-line-right" data-wow-delay="0.5s"></div>
+			<div class="line-symbol-banner wow fadeInRightBig" id="long-line-right" data-wow-delay="0.5s"></div>
+		</div>
+		<p>
+		<h2>01856 761862</h2> 
+		</p>
+	</div>
+</div>
+
+<!-- Map -->
+<section id="location" class="content-contact-us">
+	<div class="container">
+		<div class="row">
+			<div class="responsive col-md-10 col-lg-6">
+				<h6 class="medium-text">Find us in Finstown</h6>
+				<h3 class="larg-text">Location</h3>
+				<p>
+					Baikies Chipshop Takeaway is located on the main street of Finstown, a short trip between Stromness and Kirkwall. Why not stop in for your tea on Friday and Saturday nights as we accept preorders and walk-ins. 
+					<br><br>We are not affiliated with the Baikies shop, so please do not use their car park.
+				</p>
+				<ul>
+					<li>ADDRESS: <br>Baikies Chipshop Takeaway, <br>Finstown<br>KW17 2EL</li>
+					<li class="follow-us">FOLLOW US ON: 
+						<a href="https://www.facebook.com/Baikies-Chip-Shop-Takeaway-111906970356591/?ref=page_internal"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
+			<div class="responsive col-md-10 col-lg-6">
+				<div class="img-reservation-03 hover-img" style="border: 1px solid lightgray">
+					<img src="images/baikies_shop.png" alt="img-menu">
+				</div>
+			</div>
+		</div>
+		<div class="map wow zoomIn" style="border: 2px solid lightgray">
+			<iframe
+				width=100%
+				height="450"
+				frameborder="0" style="border:0"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1027.2126396521476!2d-3.1208536!3d59.008092700000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x489aff0f5d400d31%3A0x84a467ae95e93d3b!2sBaikies%20Chip%20Shop%20Takeaway!5e0!3m2!1sen!2suk!4v1608851039227!5m2!1sen!2suk" allowfullscreen>
+			</iframe>	
+			
+
+	    </div>
+	</div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+	<div class="container">
+		<div class="content-footer row">
+			<div class="column-footer col-lg-5 col-md-8 col-sm-7">
+				<h3>Contact information</h3>
+				<ul>
+					<li>ADDRESS: Baikies Chipshop Takeaway, Finstown, KW17 2EL</li>
+					<li>FOR BOOKING: 01856 761862</li>
+					<li class="follow-us">FOLLOW US ON: 
+						<a href="https://www.facebook.com/Baikies-Chip-Shop-Takeaway-111906970356591/?ref=page_internal"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
+			<div class="column-footer col-lg-4 col-md-5 col-sm-7">
+				<h3>Restaurant hours</h3>
+				<ul id="restaurant-hours">
+					<li>
+						<span class="span-left">Friday</span>
+						<span class="span-right">4PM - 7:30PM</span>
+					</li>
+					<li>
+						<span class="span-left">Saturday</span>
+						<span class="span-right">4PM - 7:30PM</span>
+					</li>
+					<li>
+						Please check our <a href="https://www.facebook.com/Baikies-Chip-Shop-Takeaway-111906970356591/">Facebook Page</a> for holiday seasons.
+					</li>
+				</ul>
+				<div class="line-divide first-line"></div>
+			</div>
+			<div class="column-footer col-lg-3 col-md-3 col-sm-7">
+				<h3>Surrounding Attractions</h3>
+				<ul id="useful-links">
+					<li>
+						<span class="span-left">
+							<a href="https://www.historicenvironment.scot/visit-a-place/places/ring-of-brodgar-stone-circle-and-henge/">Ring of Brodgar</a>
+						</span> 
+						<span class="span-right">
+							<a href="https://www.nessofbrodgar.co.uk/">Ness of Brodgar</a>
+						</span>
+					</li>
+					<li>
+						<span class="span-left">
+							<a href="rhttp://www.exploreorkney.com/index.php">Explore Orkney</a>
+						</span> 
+						<span class="span-right">
+							<a href="https://www.maeshowe.co.uk/">Mea Howe</a>
+						</span>
+					</li>
+					<li>
+						<span class="span-left">
+							<a href="http://www.atlantislodges.com/">Atlantis Lodges</a>
+						</span>
+					</li>
+					<li><a href="https://www.historicenvironment.scot/visit-a-place/places/stones-of-stenness-circle-and-henge/">Standing Stones of Stenness</a></li>
+					<li><a href="https://goo.gl/maps/a7YdqaLwNzNEohUZ8">Grimbister Farm Cheese</a></li>
+				</ul>
+				<div class="line-divide second-line"></div>
+			</div>
+		</div>
+	</div>
+</footer>
+		
+<!-- Back to top -->
+<div class="btn-back-to-top" id="myBtn">
+	<span class="symbol-btn-back-to-top">
+		<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+	</span>
+</div>
+
+<!--===============================================================================================-->	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/animsition/dist/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.min.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->	
+	<script type="text/javascript" src="vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script src="js/slide-custom.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/daterangepicker-bootstrap/moment.min.js"></script>
+	<script type="text/javascript" src="vendor/daterangepicker-bootstrap/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/wow/wow.min.js"></script>
+
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<!--==================================Bubble----------=============================================-->
+<script>
+	$(document).ready(function(){
+	  $('[data-toggle="popover"]').popover();
+	});
+	</script>
+</body>
+</html>
